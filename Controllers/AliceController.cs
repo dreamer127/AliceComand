@@ -4,7 +4,7 @@ namespace AliceHook.Controllers
 {
     [ApiController]
     [Route(template:"/")]
-    public class MyControler:ControllerBase
+    public class AliceController:ControllerBase
     {
         [HttpGet]
         public string GetFunc()
