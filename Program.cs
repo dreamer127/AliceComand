@@ -13,14 +13,7 @@ namespace AliceHook
         private static void StartServer()
         {
             new WebHostBuilder()
-                .UseKestrel()
-#if DEBUG
-                .ConfigureLogging(logging =>
-                {
-                    logging.AddDebug();
-                    logging.AddConsole();
-                })
-#endif                           
+                .UseKestrel()            
                 .UseStartup<Startup>()
                 .Build()
                 .Run();
